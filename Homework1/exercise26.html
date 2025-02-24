@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Radio Buttons</title>
+    <style>
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .radio-group {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    
+    <form action="#" method="post">
+        <p>What is your favorite programming language?</p>
+        
+        <div class="radio-group">
+            <input type="radio" id="python" name="language" value="python">
+            <label for="python">Python</label>
+        </div>
+        
+        <div class="radio-group">
+            <input type="radio" id="javascript" name="language" value="javascript">
+            <label for="javascript">JavaScript</label>
+        </div>
+        
+        <div class="radio-group">
+            <input type="radio" id="java" name="language" value="java">
+            <label for="java">Java</label>
+        </div>
+        
+        <div class="radio-group">
+            <input type="radio" id="cpp" name="language" value="cpp">
+            <label for="cpp">C++</label>
+        </div>
+
+        <p>What is your experience level?</p>
+        
+        <div class="radio-group">
+            <input type="radio" id="beginner" name="experience" value="beginner">
+            <label for="beginner">Beginner</label>
+        </div>
+        
+        <div class="radio-group">
+            <input type="radio" id="intermediate" name="experience" value="intermediate">
+            <label for="intermediate">Intermediate</label>
+        </div>
+        
+        <div class="radio-group">
+            <input type="radio" id="advanced" name="experience" value="advanced">
+            <label for="advanced">Advanced</label>
+        </div>
+
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>

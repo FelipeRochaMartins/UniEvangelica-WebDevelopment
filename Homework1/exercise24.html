@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Colgroup</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .name-col {
+            background-color: #e6f3ff;
+        }
+        .math-col {
+            background-color: #fff3e6;
+        }
+        .science-col {
+            background-color: #e6ffe6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Grades</h1>
+    
+    <table>
+        <colgroup>
+            <col class="name-col">
+            <col class="math-col">
+            <col class="science-col">
+        </colgroup>
+        
+        <tr>
+            <th>Student Name</th>
+            <th>Mathematics</th>
+            <th>Science</th>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>85</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>Emma Davis</td>
+            <td>92</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>Michael Johnson</td>
+            <td>78</td>
+            <td>95</td>
+        </tr>
+    </table>
+</body>
+</html>

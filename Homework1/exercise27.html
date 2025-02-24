@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Checkboxes</title>
+    <style>
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .checkbox-group {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interest Survey</h1>
+    
+    <form action="#" method="post">
+        <p>What are your hobbies? (Select all that apply)</p>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+            <label for="gaming">Gaming</label>
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+            <label for="cooking">Cooking</label>
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+            <label for="traveling">Traveling</label>
+        </div>
+
+        <p>Which devices do you own?</p>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="smartphone" name="devices" value="smartphone">
+            <label for="smartphone">Smartphone</label>
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="laptop" name="devices" value="laptop">
+            <label for="laptop">Laptop</label>
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="tablet" name="devices" value="tablet">
+            <label for="tablet">Tablet</label>
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="desktop" name="devices" value="desktop">
+            <label for="desktop">Desktop Computer</label>
+        </div>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

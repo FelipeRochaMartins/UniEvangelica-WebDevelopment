@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campos de Seleção</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário com Campo de Seleção</h1>
+    
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="estado">Selecione seu Estado:</label>
+            <select id="estado" name="estado">
+                <option value="">Selecione...</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="es">Espírito Santo</option>
+                <option value="ba">Bahia</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="pr">Paraná</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>

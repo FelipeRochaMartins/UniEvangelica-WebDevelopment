@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio Buttons</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .radio-group, .checkbox-group {
+            margin: 10px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário com Checkbox e Radio Buttons</h1>
+    
+    <form action="#" method="post">
+        <div class="form-group">
+            <label>Interesses:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia">
+                <label for="tecnologia">Tecnologia</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="esportes" name="interesses" value="esportes">
+                <label for="esportes">Esportes</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="musica" name="interesses" value="musica">
+                <label for="musica">Música</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Gênero:</label>
+            <div class="radio-group">
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="feminino" name="genero" value="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="outro" name="genero" value="outro">
+                <label for="outro">Outro</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>

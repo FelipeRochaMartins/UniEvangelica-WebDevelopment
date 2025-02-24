@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos GET e POST</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .form-title {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulários com Métodos GET e POST</h1>
+        
+        <!-- Formulário usando método GET -->
+        <form action="#" method="get">
+            <div class="form-title">
+                <h2>Formulário usando GET</h2>
+                <p>Os dados aparecerão na URL após o envio</p>
+            </div>
+            
+            <div class="form-group">
+                <label for="nome-get">Nome:</label>
+                <input type="text" id="nome-get" name="nome">
+            </div>
+            
+            <div class="form-group">
+                <label for="email-get">Email:</label>
+                <input type="email" id="email-get" name="email">
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Enviar via GET">
+            </div>
+        </form>
+
+        <!-- Formulário usando método POST -->
+        <form action="#" method="post">
+            <div class="form-title">
+                <h2>Formulário usando POST</h2>
+                <p>Os dados NÃO aparecerão na URL após o envio</p>
+            </div>
+            
+            <div class="form-group">
+                <label for="nome-post">Nome:</label>
+                <input type="text" id="nome-post" name="nome">
+            </div>
+            
+            <div class="form-group">
+                <label for="email-post">Email:</label>
+                <input type="email" id="email-post" name="email">
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Enviar via POST">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

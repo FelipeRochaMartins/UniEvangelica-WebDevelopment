@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Campos</title>
+    <style>
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .radio-group {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário com Campos Agrupados</h1>
+    
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências</legend>
+            
+            <div class="form-group">
+                <label>Período de Contato:</label>
+                <div class="radio-group">
+                    <input type="radio" id="manha" name="periodo" value="manha">
+                    <label for="manha">Manhã</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="tarde" name="periodo" value="tarde">
+                    <label for="tarde">Tarde</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="noite" name="periodo" value="noite">
+                    <label for="noite">Noite</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>

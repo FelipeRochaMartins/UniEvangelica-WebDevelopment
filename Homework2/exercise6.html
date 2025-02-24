@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de Formulário</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .required:after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário com Atributos Especiais</h1>
+    
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+        </div>
+        
+        <div class="form-group">
+            <label for="email" class="required">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+        </div>
+        
+        <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" maxlength="12" placeholder="Máximo 12 caracteres">
+        </div>
+        
+        <div class="form-group">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+    <p><small>Campos marcados com * são obrigatórios</small></p>
+</body>
+</html>

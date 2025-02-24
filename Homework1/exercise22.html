@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styling</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Styled Table Example</h1>
+    
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Apple Inc.</td>
+            <td>Tim Cook</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Samsung</td>
+            <td>Kim Ki Nam</td>
+            <td>South Korea</td>
+        </tr>
+        <tr>
+            <td>Sony</td>
+            <td>Kenichiro Yoshida</td>
+            <td>Japan</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Select Menus</title>
+    <style>
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        select {
+            width: 200px;
+            padding: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Preferences Form</h1>
+    
+    <form action="#" method="post">
+        <p>
+            <label for="country">Select your country:</label><br>
+            <select id="country" name="country">
+                <option value="">-- Select a country --</option>
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="germany">Germany</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="languages">Select languages you know:</label><br>
+            <select id="languages" name="languages" multiple size="4">
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+                <option value="chinese">Chinese</option>
+                <option value="japanese">Japanese</option>
+            </select>
+            <br>
+            <small>(Hold Ctrl/Cmd to select multiple options)</small>
+        </p>
+
+        <p>
+            <label for="education">Select your education level:</label><br>
+            <select id="education" name="education">
+                <optgroup label="High School">
+                    <option value="hs_freshman">Freshman</option>
+                    <option value="hs_sophomore">Sophomore</option>
+                    <option value="hs_junior">Junior</option>
+                    <option value="hs_senior">Senior</option>
+                </optgroup>
+                <optgroup label="College">
+                    <option value="college_freshman">Freshman</option>
+                    <option value="college_sophomore">Sophomore</option>
+                    <option value="college_junior">Junior</option>
+                    <option value="college_senior">Senior</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>
