@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.left {
+    text-align: left;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+.right {
+    text-align: right;
+    background-color: #d0d0d0;
+    padding: 10px;
+}

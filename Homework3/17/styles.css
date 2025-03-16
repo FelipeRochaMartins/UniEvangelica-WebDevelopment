@@ -1,0 +1,19 @@
+body {
+    background: linear-gradient(to right, #FF5733, #FFC300);
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
